@@ -14,7 +14,7 @@ function App() {
     <>
       <NavbarComponent />
         <Routes>
-          <Route path="/Homepage" Component={HomePage} />
+          <Route path="/" Component={HomePage} />
           <Route path="/class" Component={ClassPage} />
           <Route path="/faq" Component={FaqPage} />
           <Route path="/terms" Component={TermsAndAgreePage} />

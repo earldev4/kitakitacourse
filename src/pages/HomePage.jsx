@@ -24,7 +24,7 @@ const HomePage = () => {
                   <button className="btn btn-outline-danger btn-lg rounded-1 me-2">Lihat Promo</button>
                 </Col>
                 <Col lg="6" className="pt-lg-0 pt-5">
-                  <img src={HeroImage} alt="hero-img" />
+                  <img src={HeroImage} alt="hero-img" className="animate__animated animate__fadeInUp"/>
                 </Col>
               </Row>
             </Container>
@@ -40,7 +40,7 @@ const HomePage = () => {
               <Row>
                 {semuaKelas.map((kelas)=>{
                   return (
-                    <Col key={kelas.id} className="shadow rounded">
+                    <Col key={kelas.id} className="shadow rounded " data-aos="fade-up" data-aos-duration="1000">
                       <img src={kelas.image} alt="unsplash.com" />
                       <div className="star mb-2 px-3">
                         <i className={kelas.star1}></i>
@@ -59,8 +59,8 @@ const HomePage = () => {
                 })}
               </Row>
               <Row>
-                <Col className="text-center">
-                  <button className="btn btn-success rounded-5 btn-lg" onClick={() => navigate("/class")}>Lihat Semua Kelas<i className="fa-solid fa-angles-right ms-3"></i></button>
+                <Col className="text-center" >
+                  <button className="btn btn-success rounded-5 btn-lg" onClick={() => navigate("/class")} data-aos="fade-up" data-aos-duration="1000">Lihat Semua Kelas<i className="fa-solid fa-angles-right ms-3"></i></button>
                 </Col>
               </Row>
             </Container>

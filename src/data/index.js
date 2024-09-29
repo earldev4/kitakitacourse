@@ -20,7 +20,7 @@ import People8 from "../assets/img/testimonial/people-8.jpg";
 export const navLinks = [
   {
     id: 1,
-    path: "Homepage",
+    path: "",
     text: "Beranda",
   },
   {
